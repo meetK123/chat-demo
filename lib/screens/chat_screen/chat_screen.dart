@@ -11,12 +11,10 @@ class ChatScreen extends StatefulWidget {
 }
 
 class ChatScreenState extends State<ChatScreen> {
+
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
   final TextEditingController _textController = TextEditingController();
   final String _sender = 'John'; // Set your sender name here
-
-
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
